@@ -1,0 +1,16 @@
+<svg class="superheroSearch" width="50" height="50" viewBox="0 0 205 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M45 10C25.67 10 10 25.67 10 45C10 64.33 25.67 80 45 80C64.33 80 80 64.33 80 45C80 25.67 64.33 10 45 10ZM0 45C0 20.1472 20.1472 0 45 0C69.8528 0 90 20.1472 90 45C90 69.8528 69.8528 90 45 90C20.1472 90 0 69.8528 0 45Z"
+    stroke="black"
+    stroke-width="5"
+  />
+  <path class="superheroSearchLine" fill-rule="evenodd" clip-rule="evenodd" d="M102.355 112.355L67 77L74.0711 69.9289L109.426 105.284L102.355 112.355Z" stroke="black"
+    stroke-width="5" />
+</svg>;
+<svg class="superheroLoad" width="50" height="50" viewBox="0 0 105 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="M160 10C140.67 10 125 25.67 125 45C125 64.33 140.67 80 160 80C179.33 80 195 64.33 195 45C195 25.67 179.33 10 160 10ZM115 45C115 20.1472 135.147 0 160 0C184.853 0 205 20.1472 205 45C205 69.8528 184.853 90 160 90C135.147 90 115 69.8528 115 45Z"
+    stroke="black"
+    stroke-width="5"
+  />
+</svg>;

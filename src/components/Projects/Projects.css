@@ -1,0 +1,47 @@
+.Projects {
+  left: 100%;
+  background: #333333;
+  z-index: 2;
+  position: relative;
+}
+
+.close-btn {
+  height: 5vh;
+  width: 5vw;
+  position: absolute;
+  z-index: 3;
+  cursor: pointer;
+  top: 4%;
+  right: 9%;
+}
+
+.close-btn path {
+  stroke: white;
+}
+
+.close-btn:hover path:nth-child(1) {
+  animation: move 1s forwards;
+}
+
+.close-btn:hover path:nth-child(2) {
+  animation: move 1s forwards 0.3s;
+}
+
+@keyframes move {
+  0% {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+  }
+  100% {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+.Projects .hide {
+  visibility: hidden;
+}

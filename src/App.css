@@ -1,0 +1,62 @@
+@font-face {
+  font-family: GT Walsheim Pro-Regular;
+  src: url(fonts/gt-walsheim-regular.e7483ff.woff);
+}
+
+@font-face {
+  font-family: GT Walsheim Pro-Light;
+  src: url(fonts/gt-walsheim-light.2d124a3.woff);
+}
+
+@font-face {
+  font-family: GT Walsheim Pro-Bold;
+  src: url(fonts/gt-walsheim-bold.8450aa7.woff);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
+  -webkit-transition: all 1s cubic-bezier(0.5, -0.005, 0.2, 1) !important;
+  color: #fff;
+  overflow: hidden;
+  font-family: GT Walsheim Pro-Regular, sans-serif;
+}
+
+.image-bg {
+  background: url("images/bg.jpg");
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.image-bg::after {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6));
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+.front-page {
+  transform: translateX(-94%);
+}

@@ -1,0 +1,35 @@
+@keyframes line {
+  to {
+    stroke-dashoffset: 250;
+  }
+}
+
+.line {
+  animation: line 3s ease forwards 2s;
+}
+
+.fill-orange {
+  animation: line 3s ease-in forwards 0.3s, fill-orange 1s forwards 3s;
+}
+
+@keyframes fill-orange {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #e09956;
+  }
+}
+
+.fill-white {
+  animation: line 3s ease-in-out forwards 1s, fill-white 1s forwards 4s;
+}
+
+@keyframes fill-white {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: white;
+  }
+}

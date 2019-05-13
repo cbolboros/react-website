@@ -1,0 +1,26 @@
+.Hero {
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 50%;
+  font-size: 20pt;
+  transform: translate(-50%, -50%);
+  transition: all 2s ease;
+  font-family: GT Walsheim Pro-Light, sans-serif !important;
+  text-align: center;
+  opacity: 0;
+}
+
+.Hero.show {
+  opacity: 1;
+}
+
+.Hero .word.reveal {
+  opacity: 1;
+  transition: all 1s ease;
+}
+
+.Hero .word {
+  opacity: 0;
+  transition: all 1s ease;
+}

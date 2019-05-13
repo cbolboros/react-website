@@ -1,0 +1,120 @@
+.card {
+  border-radius: 5%;
+  transition: all 0.5s ease;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  -ms-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  -o-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
+  position: relative;
+  height: 50vh;
+}
+
+.card-image {
+  border-radius: 5%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 0.2;
+  z-index: 2;
+  position: absolute;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card:hover .card-image {
+  opacity: 0.8;
+  z-index: -1;
+  transition: opacity 0.5s ease;
+}
+
+.card:hover .card-name {
+  top: -10%;
+  opacity: 1;
+}
+
+.card-name {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%);
+  width: 100%;
+  color: black;
+  font-family: GT Walsheim Pro-Regular, sans-serif;
+  font-size: 16pt;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.card-full-name {
+  color: black;
+  font-family: GT Walsheim Pro-Light, sans-serif;
+  z-index: 2;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  text-align: center;
+  background: #00000014;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.card:hover .powerstats {
+  left: -19%;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.powerstats {
+  display: grid;
+  position: absolute;
+  left: 0%;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.stats.fa {
+  padding: 5px 0;
+}
+
+.stats span {
+  font-family: GT Walsheim Pro-Light, sans-serif;
+}
+
+.stats.strength {
+  color: darkred;
+}
+
+.stats.intelligence {
+  color: lightskyblue;
+}
+
+.stats.speed {
+  color: orange;
+}
+
+#DC_Comics {
+  width: 20px;
+  height: 30px;
+  position: absolute;
+  top: -8%;
+  right: 3%;
+}
+
+#Marvel {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -8%;
+  right: 3%;
+}

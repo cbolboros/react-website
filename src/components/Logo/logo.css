@@ -1,0 +1,47 @@
+#mainLogo {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: all 1s cubic-bezier(0.3, 0, 0, 1);
+}
+
+/* Line */
+#mainLogo path:nth-child(1) {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: all ease 1s;
+}
+
+/* Letter B */
+#mainLogo path:nth-child(2) {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: all ease 1s;
+}
+/* Letter C */
+#mainLogo path:nth-child(3) {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  transition: all ease 1s;
+}
+
+#mainLogo.move {
+  left: 3%;
+  transition-delay: 0.25s;
+}
+
+#mainLogo.move path:nth-child(1) {
+  opacity: 0;
+}
+
+#mainLogo.move path:nth-child(2) {
+  transform: translateX(13%);
+  transition-delay: 0.5s;
+}
+
+#mainLogo.move path:nth-child(3) {
+  transform: translateX(13%);
+  transition-delay: 0.5s;
+}
