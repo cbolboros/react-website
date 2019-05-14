@@ -40,7 +40,7 @@
   top: -22%;
   text-transform: lowercase;
   color: #cecece42;
-  background: url("./heroes.jpg");
+  background: url("../../../images/heroes.jpg");
   background-size: contain;
   background-clip: text;
 }
