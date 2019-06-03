@@ -2,14 +2,14 @@
   color: #fff;
   font-size: 15pt !important;
   display: block;
-  transition: all ease-in-out 500ms;
+  transition: all ease-in-out 200ms;
 }
 
 .icon:hover {
   opacity: 0.6;
-  transform: scale(1.7);
+  transform: scale(1.5);
   cursor: pointer;
-  transition: all ease-in-out 500ms;
+  transition: all ease-in-out 200ms;
 }
 
 li {
@@ -17,6 +17,6 @@ li {
 }
 
 .active {
-  transform: scale(1.7) !important;
+  transform: scale(1.5) !important;
   color: #e09956;
 }

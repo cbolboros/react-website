@@ -9,7 +9,8 @@ class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      close: false
+      close: false,
+      project: null
     };
   }
   render(props) {
@@ -21,25 +22,43 @@ class Projects extends Component {
           <div className="project-description">
             <p className="project-title">Superheroes</p>
             <p className="project-info">A simple API that get's information about searched hero(s).</p>
-            <Button className="project-show" size="small" variant="contained" color="primary">
-              Try
+            <Button onClick={this.showHero.bind(this)} className="project-show" size="small" variant="contained" color="primary">
+              Demo
             </Button>
             <ul className="project-resources">
-              <li>fetch API</li>
-              <li>
-                <a href="https://superheroapi.com/">Superhero API</a>
-              </li>
+              <li>Superhero API</li>
             </ul>
           </div>
         </div>
-        <ProjectSuperhero closeMe={this.state.close} />
-        <Close className={"close-btn " + (this.state.close ? "hide" : "")} onClick={this.closeProject.bind(this)} />
+        <div className="project">
+          <div className="project-image" />
+          <div className="project-description">
+            <p className="project-title">GEO</p>
+            <p className="project-info">A simple API that get's information about searched hero(s).</p>
+            <Button onClick={this.showGeo.bind(this)} className="project-show" size="small" variant="contained" color="primary">
+              Demo
+            </Button>
+            <ul className="project-resources">
+              <li>JS</li>
+            </ul>
+          </div>
+        </div>
+        <ProjectSuperhero showMe={this.state.project} />
+        <Close className={"close-btn " + (this.state.project ? "" : "hide")} onClick={this.closeProject.bind(this)} />
       </div>
     );
   }
 
+  showGeo() {
+    this.setState({ project: "geo" });
+  }
+
+  showHero() {
+    this.setState({ project: "hero" });
+  }
+
   closeProject() {
-    this.setState({ close: true });
+    this.setState({ project: null, close: true });
   }
 }
 

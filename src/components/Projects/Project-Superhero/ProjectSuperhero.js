@@ -38,9 +38,9 @@ export class ProjectSuperhero extends Component {
   }
 
   render() {
-    const { closeMe } = this.props;
+    const { showMe } = this.props;
     return (
-      <div className={"wrapper " + (closeMe ? "hide" : "")}>
+      <div className={"superherowrapper " + (showMe === "hero" ? "" : "hide")}>
         <div className="Superhero">
           <h1 className="title">Heroes</h1>
           <SearchField handleChange={this.handleChange.bind(this)} searching={this.state.searching} firstSearch={this.state.firstSearch} />
